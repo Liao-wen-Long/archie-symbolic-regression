@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nmr-archie-symbolic-regression"
+version = "0.1.0"
+description = "Core-grouped symbolic regression for Archie-type exponents, with synthetic examples"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["numpy>=1.24,<3", "pandas>=2,<4"]
+
+[project.optional-dependencies]
+excel = ["openpyxl>=3.1,<4"]
+
+[project.scripts]
+nmr-archie-sr = "nmr_archie_sr.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

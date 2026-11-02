@@ -1,0 +1,3 @@
+# Tested runtime: Python 3.12.14. Excel support is optional, not needed for the demo.
+numpy==2.3.5
+pandas==3.0.1

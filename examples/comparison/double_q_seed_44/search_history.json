@@ -1,0 +1,20 @@
+{
+  "m": [
+    {
+      "iteration": 0,
+      "expression": "pexp((ps * pm))",
+      "reward": 0.9879482867948934,
+      "train_mse": 0.0022063779181152733,
+      "validation_mse": 0.0017814495884749474
+    }
+  ],
+  "n": [
+    {
+      "iteration": 0,
+      "expression": "pexp((ps * pm))",
+      "reward": 0.9871388660152646,
+      "train_mse": 0.002713599488130762,
+      "validation_mse": 0.003343652156379302
+    }
+  ]
+}

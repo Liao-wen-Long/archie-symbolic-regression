@@ -1,0 +1,2 @@
+[console_scripts]
+nmr-archie-sr = nmr_archie_sr.cli:main

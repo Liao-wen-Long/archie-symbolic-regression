@@ -1,0 +1,119 @@
+{
+  "train": {
+    "cores": 48,
+    "all_rows": 240,
+    "m_clipped_rows": 0,
+    "n_clipped_rows": 0,
+    "evaluation_scope": "Partial-saturation rows only; independent cores in test.",
+    "deployment_learned": {
+      "rows": 192,
+      "mae_fraction": 0.012957834834094462,
+      "mae_percentage_points": 1.2957834834094462,
+      "rmse_fraction": 0.017316506259214486,
+      "mean_relative_error_percent": 2.5198504716523242,
+      "r2": 0.9940027722194917
+    },
+    "deployment_baseline_m_n_2_05": {
+      "rows": 192,
+      "mae_fraction": 0.13966157288677372,
+      "mae_percentage_points": 13.966157288677373,
+      "rmse_fraction": 0.15139061004777282,
+      "mean_relative_error_percent": 30.08343874009043,
+      "r2": 0.5416176637872636
+    },
+    "measured_R0_diagnostic_learned": {
+      "rows": 192,
+      "mae_fraction": 0.009949607450823348,
+      "mae_percentage_points": 0.9949607450823348,
+      "rmse_fraction": 0.012136148336633911,
+      "mean_relative_error_percent": 2.2138595506695653,
+      "r2": 0.9970542780710243
+    },
+    "measured_R0_diagnostic_baseline_n_2_05": {
+      "rows": 192,
+      "mae_fraction": 0.04723418090546038,
+      "mae_percentage_points": 4.723418090546038,
+      "rmse_fraction": 0.05048931702050834,
+      "mean_relative_error_percent": 11.841421759215702,
+      "r2": 0.9490165773360522
+    }
+  },
+  "validation": {
+    "cores": 16,
+    "all_rows": 80,
+    "m_clipped_rows": 0,
+    "n_clipped_rows": 0,
+    "evaluation_scope": "Partial-saturation rows only; independent cores in test.",
+    "deployment_learned": {
+      "rows": 64,
+      "mae_fraction": 0.012414217092687228,
+      "mae_percentage_points": 1.2414217092687228,
+      "rmse_fraction": 0.016447382537917776,
+      "mean_relative_error_percent": 2.4876234991428054,
+      "r2": 0.994589672153028
+    },
+    "deployment_baseline_m_n_2_05": {
+      "rows": 64,
+      "mae_fraction": 0.1442008607214952,
+      "mae_percentage_points": 14.420086072149521,
+      "rmse_fraction": 0.157154388731799,
+      "mean_relative_error_percent": 30.908068855994575,
+      "r2": 0.5060499620466923
+    },
+    "measured_R0_diagnostic_learned": {
+      "rows": 64,
+      "mae_fraction": 0.009905798057599413,
+      "mae_percentage_points": 0.9905798057599413,
+      "rmse_fraction": 0.012377185607816294,
+      "mean_relative_error_percent": 2.2892107615584054,
+      "r2": 0.9969361055285934
+    },
+    "measured_R0_diagnostic_baseline_n_2_05": {
+      "rows": 64,
+      "mae_fraction": 0.04537727637364808,
+      "mae_percentage_points": 4.537727637364808,
+      "rmse_fraction": 0.04852478908024325,
+      "mean_relative_error_percent": 11.382196686997714,
+      "r2": 0.9529068968943581
+    }
+  },
+  "test": {
+    "cores": 16,
+    "all_rows": 80,
+    "m_clipped_rows": 0,
+    "n_clipped_rows": 0,
+    "evaluation_scope": "Partial-saturation rows only; independent cores in test.",
+    "deployment_learned": {
+      "rows": 64,
+      "mae_fraction": 0.012319394824344675,
+      "mae_percentage_points": 1.2319394824344676,
+      "rmse_fraction": 0.017823728330412836,
+      "mean_relative_error_percent": 2.521791363923529,
+      "r2": 0.9936462941680728
+    },
+    "deployment_baseline_m_n_2_05": {
+      "rows": 64,
+      "mae_fraction": 0.1480946023252503,
+      "mae_percentage_points": 14.80946023252503,
+      "rmse_fraction": 0.16449410153488905,
+      "mean_relative_error_percent": 32.003177432618315,
+      "r2": 0.4588338112045922
+    },
+    "measured_R0_diagnostic_learned": {
+      "rows": 64,
+      "mae_fraction": 0.010273611431705043,
+      "mae_percentage_points": 1.0273611431705043,
+      "rmse_fraction": 0.012882595775560028,
+      "mean_relative_error_percent": 2.4108808253869047,
+      "r2": 0.9966807745216705
+    },
+    "measured_R0_diagnostic_baseline_n_2_05": {
+      "rows": 64,
+      "mae_fraction": 0.0458964817901765,
+      "mae_percentage_points": 4.58964817901765,
+      "rmse_fraction": 0.04892090138824753,
+      "mean_relative_error_percent": 11.509861857648731,
+      "r2": 0.9521349081472272
+    }
+  }
+}
