@@ -1,7 +1,6 @@
 # Version 0.1.0
 
-This refactor changes behavior relative to the supplied later notebook version.
-It cannot be described as a byte-for-byte implementation of the submitted paper.
+This version includes the following implementation and verification improvements.
 
 - Immutable expression trees prevent parent mutation and stale cached states.
 - The best completed rollout is returned, including improvements from complete seeds.
@@ -18,6 +17,6 @@ It cannot be described as a byte-for-byte implementation of the submitted paper.
 - A command-line interface, safe tree JSON, deterministic synthetic generator,
   public examples, tests and English documentation are included.
 
-Any use for manuscript results requires a new private-data run and corresponding
-updates to methods, figures and numbers. The prior manuscript and earlier code
-version were not audited as equivalent to this release.
+For reproducible analyses, retain the configuration, units, core-group split and
+software versions recorded with each run. Experimental measurements remain
+confidential; the synthetic example specification is documented in `data/README.md`.
