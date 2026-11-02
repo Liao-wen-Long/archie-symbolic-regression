@@ -71,9 +71,10 @@ already contain the selected formulas, the task is not a discriminating test of
 search improvement. Additional justified tasks, independent baselines and a
 broader prespecified evaluation would be needed for a methodological claim.
 
-## Reproduction boundary
+## Data access and workflow reproducibility
 
-The package reproduces its synthetic workflow only. It does not reproduce the
-earlier manuscript's empirical tables, measurements, figures, well-log results
-or external symbolic-regression comparisons. Confidential data restrictions and
-later code changes must be disclosed when describing this repository.
+Experimental core and well-log measurements are subject to confidentiality
+restrictions. The recorded checks use the supplied synthetic example data to
+exercise and reproduce the computational workflow with the documented input
+schema, configuration and software environment. The provenance of these example
+data and their generation procedure are described in `data/README.md`.
