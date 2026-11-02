@@ -65,28 +65,27 @@ docs/
 
 可再创建 `v0.1.0` Release：仓库 `Releases` → `Draft a new release`，
 标签填 `v0.1.0`，目标选择默认分支，说明填
-`Corrected implementation with synthetic demonstration data; not a reproduction of manuscript empirical results.`
+`Implementation and synthetic examples for reproducible computational workflows.`
 然后发布。这样后续改代码时仍能指向本次固定版本。
 
 ## 5. 论文中代码和数据声明怎么写
 
 **以下是草稿，先把方括号内容替换为真实仓库/版本链接，再放入论文。**
 
-> The corrected implementation and synthetic demonstration data are publicly
-> available at [INSERT VERIFIED REPOSITORY URL], release v0.1.0, under the MIT
-> license. The experimental data are confidential and are not publicly
-> distributed. The synthetic examples demonstrate the computational workflow
-> but do not reproduce the experimental results reported in the manuscript.
+> The code is publicly available at [INSERT VERIFIED REPOSITORY URL] under the MIT
+> license. Because the experimental core and well-log data are subject to
+> confidentiality restrictions, synthetic example data are provided for code
+> execution, testing and reproduction of the computational workflow.
 
-如果论文结果以后确实用这个版本重新计算，应按真实情况同步调整最后一句。
-不要把合成数据结果替代为实测结果，也不要写成“完整复现论文结果”。
+复现说明应准确记录所用数据、配置和软件环境，并区分计算流程复现与具体实验
+数值的核验。
 
 ## 6. 本次修改与投稿之间还差什么
 
-你提供的是后来修改过的代码，这个包又修正了搜索和评估行为，因此不是原先
-生成论文图表的已确认版本。模拟运行已经完成，但以下投稿工作不能靠模拟数据替代：
+本代码包已提供合成示例运行记录。提交作者已确认本研究使用该代码，以下是
+投稿时应核对的方法与材料事项：
 
-- 在保密环境用真实数据重新运行，并同步论文公式、方法、表格及图。
+- 核对论文公式、方法、表格、图和运行配置中的参数、单位与评价范围。
 - 当前 n 的拟合使用实测 R0，属于独立标定；如果论文写成 m 固定后联合反演，
   需要与真实实现统一。
 - NMR-MICP 预处理、测井验证及 PySR/gplearn 对比代码不在本次收到的源码中，
