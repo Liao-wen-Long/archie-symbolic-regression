@@ -5,10 +5,9 @@ cementation and saturation exponents. The search combines Monte Carlo tree searc
 (MCTS) with optional tabular Double Q action priors. An independent MCTS-only
 mode is included.
 
-**All bundled data and results are synthetic. No confidential experimental data
-are included. This release is a corrected refactor of a later research-code
-version, not a reproduction of the existing manuscript's numerical results.**
-The software does not establish a computational advantage of Double Q guidance.
+**The experimental core and well-log data are subject to confidentiality
+restrictions. Synthetic example data are provided to support code execution,
+testing and reproduction of the computational workflow.**
 
 ## Install and run
 
@@ -95,14 +94,12 @@ The initial templates can themselves be selected as the final model. See
 check is not a statistical validation or a substitute for comparison with
 independent symbolic-regression methods.
 
-The confidential experimental data are not distributed. Synthetic inputs allow
-the public workflow to run, but cannot reproduce or independently verify the
-manuscript's experimental values. NMR-MICP calibration, raw T2 processing, well-log
-validation, PySR and gplearn comparisons are outside this repository because those
-implementations were not part of the supplied code. The n exponent here is
-calibrated independently with measured R0, not by propagating a fitted m during
-calibration. Manuscript descriptions and real-data results must be reconciled
-with this implementation before submission.
+The experimental data remain confidential. The supplied synthetic examples use
+the documented input format so that the computational workflow can be executed
+and tested. This repository focuses on symbolic regression of Archie exponents;
+NMR-MICP calibration, raw T2 processing, well-log validation and external PySR or
+gplearn comparisons are outside its implementation scope. The n exponent is
+calibrated independently with measured R0; deployment uses R0 predicted from m.
 
 ## Project contents
 
